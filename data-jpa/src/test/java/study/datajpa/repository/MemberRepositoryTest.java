@@ -278,4 +278,10 @@ class MemberRepositoryTest {
         em.flush();
     }
 
+    // 사용자 정의 리포지토리
+    @Test
+    public void callCustom() {
+        List<Member> result = memberRepository.findMemberCustom();
+    }
+
 }
